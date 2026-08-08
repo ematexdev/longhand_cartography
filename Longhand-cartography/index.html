@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#E8DFC8">
+<title>Longhand Cartography — Hand-Drafted Maps, Commissioned</title>
+<meta name="description" content="A two-person studio that hand-drafts custom maps in dip pen and ink — coastlines, trails, and streets, drawn from your own memory and reference, one commission at a time.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Signature element: a chart-margin ruler that ticks as the page is scrolled -->
+<aside class="chart-ruler" aria-hidden="true">
+  <div class="chart-ruler__inner">
+    <span class="chart-ruler__coord" data-ruler-coord>51°30′26″N</span>
+    <div class="chart-ruler__ticks" data-ruler-ticks></div>
+    <span class="chart-ruler__coord chart-ruler__coord--end" data-ruler-coord-end>0°07′39″W</span>
+  </div>
+</aside>
+
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <a class="brand" href="#top" aria-label="Longhand Cartography, home">
+      <svg class="brand__mark" width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <circle cx="17" cy="17" r="15.5" stroke="currentColor" stroke-width="1"/>
+        <path d="M17 3 L17 6 M17 28 L17 31 M3 17 L6 17 M28 17 L31 17" stroke="currentColor" stroke-width="1"/>
+        <path d="M17 9 L20.5 17 L17 25 L13.5 17 Z" fill="currentColor"/>
+      </svg>
+      <span class="brand__name">Longhand<em>Cartography</em></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="commissions.html">Commissions</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="materials.html">Materials</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="faq.html">Questions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn--primary btn--small" href="contact.html">Start a Commission</a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-nav-toggle>
+      <span class="visually-hidden">Toggle menu</span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" data-mobile-nav hidden>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="commissions.html">Commissions</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="materials.html">Materials</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">Questions</a></li>
+      <li><a class="btn btn--primary" href="contact.html">Start a Commission</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">Hand-drafted, one commission at a time</p>
+      <h1 class="hero__headline">Every place you've been has a shape.<br>We draw it by hand.</h1>
+      <p class="hero__sub">Longhand Cartography turns a coastline you sailed, a trail you finished, or the street where you fell in love into a map drawn entirely in dip pen and ink — surveyed from your memory, not a satellite.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#contact">Start a Commission</a>
+        <a class="btn btn--ghost" href="#commissions">See Past Work <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+
+    <div class="hero__art" aria-hidden="true">
+      <svg class="hero__route" viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="hero__route-path" d="M65 55 C 130 100, 55 155, 120 195 C 205 248, 140 300, 225 335 C 310 368, 285 405, 370 418 C 415 425, 435 400, 452 375" stroke="#2B4159" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <circle class="hero__route-point" cx="65" cy="55" r="4" fill="#A8462F"/>
+        <circle class="hero__route-point" cx="452" cy="375" r="4" fill="#1C1B17"/>
+        <g class="hero__contours" stroke="#5B7A6E" stroke-width="0.75" fill="none" opacity="0.5">
+          <path d="M330 40 C 370 22, 418 36, 427 68 C 436 100, 398 114, 370 100"/>
+          <path d="M312 54 C 345 40, 382 49, 389 72 C 396 95, 369 106, 349 96"/>
+          <path d="M55 260 C 90 235, 150 248, 160 285 C 170 320, 122 338, 92 322"/>
+        </g>
+        <g class="hero__compass" transform="translate(438,55)" opacity="0.7">
+          <circle r="24" stroke="#1C1B17" stroke-width="1" fill="none"/>
+          <path d="M0 -18 L4.5 0 L0 18 L-4.5 0 Z" fill="#1C1B17"/>
+          <text x="0" y="-29" text-anchor="middle" font-family="IBM Plex Mono" font-size="9" fill="#1C1B17">N</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="process reveal">
+    <div class="section-head">
+      <p class="eyebrow">How a commission is made</p>
+      <h2>Six stages, no shortcuts</h2>
+    </div>
+
+    <ol class="process__list">
+      <li class="process__item reveal">
+        <span class="process__num">01</span>
+        <div>
+          <h3>Consultation</h3>
+          <p>A conversation — thirty minutes, usually — about the place, the memory attached to it, and the one detail that has to appear no matter what.</p>
+        </div>
+      </li>
+      <li class="process__item reveal">
+        <span class="process__num">02</span>
+        <div>
+          <h3>Reference Gathering</h3>
+          <p>We collect your photos, GPS tracks, and half-remembered stories, so the smallest waypoint still lands in the right place.</p>
+        </div>
+      </li>
+      <li class="process__item reveal">
+        <span class="process__num">03</span>
+        <div>
+          <h3>The Longhand Draft</h3>
+          <p>Every coastline, ridge, and street is drawn by hand with dip pen and iron-gall ink on cotton rag paper. Nothing is traced from a screen.</p>
+        </div>
+      </li>
+      <li class="process__item reveal">
+        <span class="process__num">04</span>
+        <div>
+          <h3>Proofing</h3>
+          <p>A high-resolution scan comes to you for notes before a single line is inked twice. Most maps need one round.</p>
+        </div>
+      </li>
+      <li class="process__item reveal">
+        <span class="process__num">05</span>
+        <div>
+          <h3>Digitization</h3>
+          <p>The finished draft is scanned at archival resolution and prepared for giclée print, colour-matched to the original ink.</p>
+        </div>
+      </li>
+      <li class="process__item reveal">
+        <span class="process__num">06</span>
+        <div>
+          <h3>Delivery</h3>
+          <p>Your map arrives rolled in a rigid tube, ready to frame. The original hand-drawn draft is available as an add-on.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- COMMISSIONS -->
+  <section id="commissions" class="commissions reveal">
+    <div class="section-head">
+      <p class="eyebrow">Selected commissions</p>
+      <h2>Six places, drawn once</h2>
+    </div>
+
+    <div class="commissions__grid">
+
+      <article class="commission-card commission-card--wide reveal">
+        <div class="commission-card__art" aria-hidden="true">
+          <svg viewBox="0 0 400 220" fill="none"><path d="M20 190 C 80 120, 60 60, 140 40 C 220 20, 260 90, 340 30" stroke="#1C1B17" stroke-width="1.5" fill="none"/><path d="M10 200 C 100 210, 300 205, 390 195" stroke="#2B4159" stroke-width="1" opacity="0.4"/><circle cx="20" cy="190" r="3" fill="#A8462F"/><circle cx="340" cy="30" r="3" fill="#1C1B17"/></svg>
+        </div>
+        <div class="commission-card__body">
+          <span class="commission-card__meta">Expedition · 800&nbsp;km</span>
+          <h3>The Camino, Start to Finish</h3>
+          <p>Commissioned by a hiker who walked it alone. Every albergue she slept in is marked with a small dot only she can decode.</p>
+        </div>
+      </article>
+
+      <article class="commission-card reveal">
+        <div class="commission-card__art" aria-hidden="true">
+          <svg viewBox="0 0 260 220" fill="none"><path d="M40 30 C 90 60, 60 110, 120 130 C 180 150, 150 190, 210 200" stroke="#5B7A6E" stroke-width="1.5" fill="none"/><circle cx="40" cy="30" r="3" fill="#A8462F"/><circle cx="210" cy="200" r="3" fill="#1C1B17"/></svg>
+        </div>
+        <div class="commission-card__body">
+          <span class="commission-card__meta">Wedding gift</span>
+          <h3>Two Boats, One Marriage</h3>
+          <p>A couple's sailing route, from their first crossing to the harbour where they married.</p>
+        </div>
+      </article>
+
+      <article class="commission-card reveal">
+        <div class="commission-card__art" aria-hidden="true">
+          <svg viewBox="0 0 260 220" fill="none"><rect x="30" y="30" width="70" height="60" stroke="#1C1B17" stroke-width="1"/><rect x="150" y="110" width="70" height="60" stroke="#1C1B17" stroke-width="1"/><path d="M65 90 L 185 110" stroke="#2B4159" stroke-width="1" stroke-dasharray="3 3"/></svg>
+        </div>
+        <div class="commission-card__body">
+          <span class="commission-card__meta">Personal milestone</span>
+          <h3>Where We Grew Up</h3>
+          <p>Two childhood neighbourhoods, four hundred miles apart, set side by side as one composite sheet.</p>
+        </div>
+      </article>
+
+      <article class="commission-card commission-card--tall reveal">
+        <div class="commission-card__art" aria-hidden="true">
+          <svg viewBox="0 0 260 340" fill="none"><path d="M130 20 L 60 320" stroke="#1C1B17" stroke-width="1"/><path d="M130 20 L 100 320" stroke="#5B7A6E" stroke-width="1"/><path d="M130 20 L 150 320" stroke="#5B7A6E" stroke-width="1"/><path d="M130 20 L 200 320" stroke="#5B7A6E" stroke-width="1"/><circle cx="130" cy="20" r="4" fill="#A8462F"/></svg>
+        </div>
+        <div class="commission-card__body">
+          <span class="commission-card__meta">Business · Wall map</span>
+          <h3>Kilimanjaro, Six Routes</h3>
+          <p>Commissioned by an expedition operator — every summit route on one sheet, hung in the briefing room.</p>
+        </div>
+      </article>
+
+      <article class="commission-card reveal">
+        <div class="commission-card__art" aria-hidden="true">
+          <svg viewBox="0 0 260 220" fill="none"><path d="M20 40 L 60 40 L 60 90 L 130 90 L 130 150 L 220 150 L 220 190" stroke="#1C1B17" stroke-width="1.5" fill="none" stroke-linejoin="round"/><circle cx="20" cy="40" r="3" fill="#A8462F"/><circle cx="220" cy="190" r="3" fill="#1C1B17"/></svg>
+        </div>
+        <div class="commission-card__body">
+          <span class="commission-card__meta">Personal milestone</span>
+          <h3>The Long Way Home</h3>
+          <p>A cross-country move, traced street by street from the old front door to the new one.</p>
+        </div>
+      </article>
+
+      <article class="commission-card reveal">
+        <div class="commission-card__art" aria-hidden="true">
+          <svg viewBox="0 0 260 220" fill="none"><path d="M30 180 C 60 100, 120 60, 180 70 C 220 77, 230 130, 200 160" stroke="#2B4159" stroke-width="1.5" fill="none"/><path d="M10 190 C 90 210, 180 205, 250 195" stroke="#1C1B17" stroke-width="1" opacity="0.5"/></svg>
+        </div>
+        <div class="commission-card__body">
+          <span class="commission-card__meta">Edition No. 4</span>
+          <h3>Harbor Study No. 4</h3>
+          <p>A working nautical chart for a private harbour, soundings and all, drawn to hang in the boathouse.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- MATERIALS -->
+  <section id="materials" class="materials reveal">
+    <div class="materials__art" aria-hidden="true">
+      <svg viewBox="0 0 300 300" fill="none">
+        <rect x="20" y="20" width="260" height="260" stroke="#1C1B17" stroke-width="1" opacity="0.3"/>
+        <path d="M60 240 L 240 60" stroke="#1C1B17" stroke-width="1.5"/>
+        <path d="M55 235 L 65 245 M235 55 L 245 65" stroke="#1C1B17" stroke-width="1.5"/>
+        <circle cx="150" cy="150" r="70" stroke="#5B7A6E" stroke-width="0.75" opacity="0.6"/>
+        <circle cx="150" cy="150" r="40" stroke="#5B7A6E" stroke-width="0.75" opacity="0.6"/>
+      </svg>
+    </div>
+    <div class="materials__text">
+      <p class="eyebrow">Instruments</p>
+      <h2>Every map begins as paper, not pixels.</h2>
+      <dl class="materials__list">
+        <div>
+          <dt>Paper</dt>
+          <dd>300&nbsp;gsm cotton rag, the same stock used for archival etching — it takes ink without feathering and holds up for a hundred years framed.</dd>
+        </div>
+        <div>
+          <dt>Ink</dt>
+          <dd>Iron-gall for line work, walnut ink for wash and shading. Both darken slightly with age, the way a good map should.</dd>
+        </div>
+        <div>
+          <dt>Framing</dt>
+          <dd>Raw oak, blackened ash, or unframed and rolled — three options, museum glass on all of them.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial reveal">
+    <blockquote>
+      <span class="testimonial__mark" aria-hidden="true">“</span>
+      <p>I've sailed that coastline twice. I have never seen it drawn the way they saw it.</p>
+      <footer>— client, <cite>Harbor Study No. 4</cite></footer>
+    </blockquote>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq reveal">
+    <div class="section-head">
+      <p class="eyebrow">Before you write in</p>
+      <h2>Questions we're asked most</h2>
+    </div>
+
+    <div class="faq__list">
+      <details>
+        <summary>How long does a commission take?<span class="faq__chevron" aria-hidden="true"></span></summary>
+        <p>Typically 6–10 weeks from consultation to delivery, depending on how much reference gathering the place needs.</p>
+      </details>
+      <details>
+        <summary>Do you need GPS data, or can you work from a description?<span class="faq__chevron" aria-hidden="true"></span></summary>
+        <p>Either works. The richest maps usually mix both — memory for texture, GPS for accuracy.</p>
+      </details>
+      <details>
+        <summary>Do you ship outside the studio's country?<span class="faq__chevron" aria-hidden="true"></span></summary>
+        <p>Yes. Every map ships insured, rolled in a rigid tube, worldwide.</p>
+      </details>
+      <details>
+        <summary>What sizes do you offer?<span class="faq__chevron" aria-hidden="true"></span></summary>
+        <p>Three standard sizes, plus one bespoke wall-scale size for business and expedition commissions.</p>
+      </details>
+      <details>
+        <summary>Is the original hand-drawn draft included?<span class="faq__chevron" aria-hidden="true"></span></summary>
+        <p>The print is included in every commission. The original ink draft is available as a paid add-on, while it lasts — only one exists per map.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact reveal">
+    <div class="contact__intro">
+      <p class="eyebrow">Start here</p>
+      <h2>Tell us about the place.</h2>
+      <p>A short note is enough to start — we'll follow up to schedule the consultation.</p>
+      <p class="contact__coords">Studio at <span class="mono">51°30′26″N, 0°07′39″W</span></p>
+    </div>
+
+    <form class="contact__form" data-commission-form novalidate>
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" required>
+      </div>
+      <div class="field">
+        <label for="occasion">What is this for&hellip;</label>
+        <select id="occasion" name="occasion" required>
+          <option value="" disabled selected>Choose one</option>
+          <option value="personal">Personal milestone</option>
+          <option value="expedition">Expedition or sport</option>
+          <option value="wedding">Wedding or anniversary</option>
+          <option value="business">Business or hospitality</option>
+          <option value="other">Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Tell us about the place</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+
+      <button class="btn btn--primary" type="submit">Send Commission Inquiry</button>
+      <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__scale" aria-hidden="true">
+    <svg viewBox="0 0 220 20" width="140" height="14"><path d="M0 10 H220 M0 4 V16 M55 7 V13 M110 4 V16 M165 7 V13 M220 4 V16" stroke="currentColor" stroke-width="1"/></svg>
+    <span class="mono">0 — 5 — 10&nbsp;km</span>
+  </div>
+
+  <div class="site-footer__grid">
+    <div>
+      <span class="brand__name brand__name--footer">Longhand<em>Cartography</em></span>
+      <p>Hand-drafted maps, commissioned. Studio hours by appointment, Tuesday through Saturday.</p>
+    </div>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#commissions">Commissions</a></li>
+        <li><a href="#materials">Materials</a></li>
+        <li><a href="#faq">Questions</a></li>
+        <li><a href="#contact">Start a Commission</a></li>
+      </ul>
+    </nav>
+    <div class="site-footer__contact">
+      <p><a href="mailto:studio@longhandcartography.example">studio@longhandcartography.example</a></p>
+      <p class="mono">51°30′26″N, 0°07′39″W</p>
+    </div>
+  </div>
+
+  <p class="site-footer__copy">© <span data-year></span> Longhand Cartography. Every commission is one of one.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
